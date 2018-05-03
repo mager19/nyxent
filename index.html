@@ -9,9 +9,12 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<link href="https://fonts.googleapis.com/css?family=Droid+Sans|Lato" rel="stylesheet">
+	<link rel="stylesheet" href="css/responsive-nav.css">
 
- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script src="js/jquery.js"></script>
   <script>
     jQuery(document).ready(function( $ ) {
         $('.counter').counterUp({
@@ -27,51 +30,35 @@
 <header id="header">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<div class="col-md-2 col-sm-4 col-xs-6">
-					<img src="img/logo.png" alt="Nyxent">
-					<h1>nyxent</h1>
-				</div>
-				
-				<div class="col-md-10 col-sm-8 col-xs-6">
-					<nav role="navigation" class="navbar pull-right">
-					        <div class="navbar-header">
-					            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-					                <span class="sr-only">Toggle navigation</span>
-					                <span class="icon-bar"></span>
-					                <span class="icon-bar"></span>
-					                <span class="icon-bar"></span>
-					            </button>
-					            
-					        </div>
-					 
-					        <div id="navbarCollapse" class="collapse navbar-collapse">
-					            <ul class="nav navbar-nav">
-					                <li class="active"><a href="#">Software Services</a></li>
-					                <li><a href="#">Digital Marketing</a></li>
-					                <li><a href="#">About us</a></li>
-					                <li><a href="#">Portafolio</a></li>
-					                <li><a href="#">Contact</a></li>
-					                
-					            </ul>
-					        </div>
-					</nav>
-				</div>
-
+			<div class="col-md-3 col-xs-12 ">
+				<img src="img/nyxent.png" alt="logonyxent">
 			</div>
+			
+			<div class="col-md-8 col-md-offset-1 col-xs-12 ">
+				 
+			 <nav>
+			 	 <ul class="nav navbar-nav">
+			           <li><a href="#">Digital Marketing</a></li>
+			           <li><a href="#">About us</a></li>
+			           <li><a href="#">Portafolio</a></li>
+			           <li><a href="#">Contact</a></li>
+			           
+			       </ul>
+			 </nav>
+			</div>
+
 		</div>
 	</div>
 </header>
 <!-- End Header -->
-
-<!-- Section -->
-<section class="contenedor" id="slide">
-	<div class="container">
+<div id="video_box">
+  <div id="video_overlays">
+  		<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="slide__info">
 					<h2>We build digital<br> Products & Services</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi vitae asperiores nobis voluptatem nulla excepturi recusandae, sitquibusdamolestiae numquam iure distinctio, unde in culpa expedita. Officia, fuga dolore adipisci.</p>
+					<p>Yes, it's possible!<br>We make it real any develop idea you have</p>
 					<div class="button">
 						<a href="#">See Our Work</a>
 					</div>
@@ -79,8 +66,15 @@
 			</div>
 		</div>
 	</div>
-</section>
-<!-- End Section -->
+  </div>
+  <div class="videoq">
+    <video  autoplay>
+	  <source src="img/dev2-3.mp4" type="video/mp4">
+	 <source src="img/dev2-3.ogv" type="video/ogg">
+	  <source src="img/dev2-3.ogg" type="video/ogg">
+  </div>
+</div>
+
 
 <!-- Section -->
 <section class="contenedor" id="software">
@@ -90,32 +84,40 @@
 				<h2 class="title">Software Development</h2>
 			</div>
 
-			<div class="col-md-10 col-md-offset-1">
-				<div class="col-md-6 software__item">
-					<img src="img/smartphone.svg" alt="App development">
-					<h2>App Development</h2>
-					<p>All digital efforts are now focusing on having a great mobile experience.
-						Our team of experts know how to take your idea, shape it and create it, according to your needs and what the market is demanding. We offer you a holistic approach:  analyzing, developing, promoting and after supporting.
-					</p>
+			<div class="col-md-10 col-md-offset-1 col-xs-12">
+				<div class="col-md-6">
+					<div class="software__item">
+						<img src="img/smartphone.svg" alt="App development">
+						<h2>App Development</h2>
+						<p>All digital efforts are now focusing on having a great mobile experience.
+							Our team of experts know how to take your idea, shape it and create it, according to your needs and what the market is demanding. We offer you a holistic approach:  analyzing, developing, promoting and after supporting.
+						</p>
+					</div>
 				</div>
 
-				<div class="col-md-6 software__item">
-					<img src="img/coding.svg" alt="App development">
-					<h2>Custom Software Development</h2>
-					<p>Nyxent web site development solution, gives you the right tool to growth and support your digital marketing efforts. We take care of the look-and-feel and the functionality needed for satisfy your needs.
-					Nyxent creates websites that become your most valuable digital asset.</p>
+				<div class="col-md-6 ">
+					<div class="software__item">
+						<img src="img/coding.svg" alt="App development">
+						<h2>Custom Software Development</h2>
+						<p>Nyxent web site development solution, gives you the right tool to growth and support your digital marketing efforts. We take care of the look-and-feel and the functionality needed for satisfy your needs.
+						Nyxent creates websites that become your most valuable digital asset.</p>
+					</div>
 				</div>
 
-				<div class="col-md-6 software__item">
-					<img src="img/browser.svg" alt="App development">
-					<h2>Web Site Development</h2>
-					<p>We are a high tech software development company, able to work with start-up or established businesses. With many projects already under our belt, we can provide you with the guidelines and share our expertise with your company.</p>
+				<div class="col-md-6 ">
+					<div class="software__item software__item__animation">
+						<img src="img/browser.svg" alt="App development">
+						<h2>Web Site Development</h2>
+						<p>We are a high tech software development company, able to work with start-up or established businesses. With many projects already under our belt, we can provide you with the guidelines and share our expertise with your company.</p>
+					</div>
 				</div>
 
-				<div class="col-md-6 software__item ">
-					<img src="img/diagram.svg" alt="App development">
-					<h2>Maintenance and Support</h2>
-					<p>Whether it is our project or not, we can always assist you at any step of the way. We always love a good challenge.</p>
+				<div class="col-md-6 ">
+					<div class="software__item software__item__animation">
+						<img src="img/diagram.svg" alt="App development">
+						<h2>Maintenance and Support</h2>
+						<p>Whether it is our project or not, we can always assist you at any step of the way. We always love a good challenge.</p>
+					</div>
 				</div>
 			</div>
 
@@ -125,11 +127,11 @@
 </section>
 <!-- End Section -->
 
-<!-- Section -->
+<!-- Section --> 
 <section id="barra">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-4">
 				<div class="barra__item">
 					<i class="fa fa-calendar" aria-hidden="true"></i><br>
 					<span class="counter">20</span>
@@ -137,7 +139,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-4">
 				<div class="barra__item">
 					<i class="fa fa-lightbulb-o" aria-hidden="true"></i><br>
 					<span>+</span><span class="counter">1800</span>
@@ -145,7 +147,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-4 col-xs-4">
 				<div class="barra__item">
 					<i class="fa fa-users" aria-hidden="true"></i><br>
 					<span>+</span><span class="counter">700</span>
@@ -158,11 +160,141 @@
 <!-- End Section -->
 
 <!-- Section -->
-<section id="marketing">
+<section class="contenedor" id="marketing">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h3>Soy marketing</h3>
+				<h2 class="title">Digital Marketing</h2>
+			</div>
+
+			<div class="col-md-4 col-xs-12">
+				<div class="marketing__item">
+					<div class="row">
+						<div class="col-md-12">
+							<img src="img/megaphone.svg" alt="digital marketing">
+						</div>
+						<div class="col-md-12">
+							<h3>Digital Marketing Consulting</h3>
+						</div>
+						<div class="col-md-12">
+							<p>This is a comprehensive service where we’ll be looking at what have you been doing in your digital marketing practices and what 		and how you can improve it. If you are just starting and need orientation of best practices, we are here for you too.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="marketing__item">
+					<div class="row">
+						<div class="col-md-12">
+							<img src="img/socialmedia.svg" alt="social media">
+						</div>
+						<div class="col-md-12">
+							<h3>Social Media</h3>
+						</div>
+						<div class="col-md-12">
+							<p>Developing a social media marketing strategy can be challenging if you don’t have the time, the knowledge or think every channel is right for your business needs. Reach Its full potential by utilizing their advertising options to amplify your message.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="marketing__item">
+					<div class="row">
+						<div class="col-md-12">
+							<img src="img/content.svg" alt="Content marketing">
+						</div>
+						<div class="col-md-12">
+							<h3>Content Marketing</h3>
+						</div>
+						<div class="col-md-12">
+							<p>Developing content right, means: to have a good engagement or interaction rate in social media channels, generating traffic to your site and contributing to SEO efforts. Content marketing is an exhaustive task for your business if you want to enjoy all its benefits.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-xs-12">
+				<div class="marketing__item">
+					<div class="row">
+						<div class="col-md-12">
+							<img src="img/search.svg" alt="Search optimization">
+						</div>
+						<div class="col-md-12">
+							<h3>Search Engine Optimization</h3>
+						</div>
+						<div class="col-md-12">
+							<p>This process is not done from one day to another. It requires constant fuel through relevant content of interest to your target market. All this process starts from your own online business shop (your web site), but is reinforce with other digital marketing tactics.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="marketing__item">
+					<div class="row">
+						<div class="col-md-12">
+							<img src="img/online.svg" alt="Online Advertising">
+						</div>
+						<div class="col-md-12">
+							<h3>Online Advertising</h3>
+						</div>
+						<div class="col-md-12">
+							<p>Reaching you target market at the right moment means increasing the possibilities of acquiring qualifying leads that could be transformed in potential sales. You need to have into account that advertising alone is not enough. An optimized website and a strategy is essential to achieve the objectives.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="marketing__item">
+					<div class="row">
+						<div class="col-md-12">
+							<img src="img/email.svg" alt="Email marketing">
+						</div>
+						<div class="col-md-12">
+							<h3>Email marketing</h3>
+						</div>
+						<div class="col-md-12">
+							<p>The idea of email marketing is to advertise products or services to your already qualified data base. Keeping fresh in customer mind for when they are ready to buy. Email marketing is your ally to transform your potential leads into customers
+</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- End Section -->
+
+<!-- Section -->
+<section class="contenedor" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="title">About Us</h2>
+			</div>
+
+			<div class="col-md-5">
+				<img src="img/ipad.png" alt="code">	
+			</div>
+
+			<div class="col-md-7 about__right">
+				<h3>We are a 360° Software development company</h3>
+				<p>At Nyxent, we take care of all the stages of the development life cycle: initial analysis, design framework, prototype, quality assurance, digital launchings and post project ongoing maintenance.</p>
+
+				<p>Since 1995, Nyxent has been involved in hundreds of software development projects worldwide, offering top notch services with specialists in the IT field. We are experts in developing, customizing and integrating IT solutions to each client needs.</p>
+
+				<h4>Our methodology:</h4>
+				<ul>
+					<li><i class="fa fa-check" aria-hidden="true"></i> Every project has a team leader </li>
+					<li><i class="fa fa-check" aria-hidden="true"></i> Our internal team have meetings every day to follow up developments</li>
+					<li><i class="fa fa-check" aria-hidden="true"></i> You are in constant contact with the team leader</li>
+					<li><i class="fa fa-check" aria-hidden="true"></i> We have smart meetings to present progress and establish future tasks to follow</li>
+					<li><i class="fa fa-check" aria-hidden="true"></i> We test and improve until have the perfect product/ service for you</li>
+		
+				</ul>
+
 			</div>
 		</div>
 	</div>
@@ -170,11 +302,55 @@
 <!-- End Section -->
 
 <!-- Section -->
-<section id="about">
+<section class="contenedor hidden-xs" id="how">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h3>Soy about</h3>
+				<h2 class="title">How can you engage with us?</h2>
+			</div>
+
+			<div class="col-md-3 col-xs-6">
+				<div class="how__item" id="how__item--one">
+					<div class="col-md-12 how__item__head">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i>
+						<h3>Contact Us</h3>
+						<p>Using the contact form</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-md-3 col-xs-6">
+				<div class="how__item" id="how__item--two">
+					<div class="col-md-12 how__item__head">
+						<i class="fa fa-area-chart" aria-hidden="true"></i>
+						<h3>Study</h3>
+						<p>We study your case</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-md-3 col-xs-6">
+				<div class="how__item" id="how__item--three">
+					<div class="col-md-12 how__item__head">
+						<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+						<h3>Proposal</h3>
+						<p>We send a proposal for you review</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-md-3 col-xs-6">
+				<div class="how__item how__item--four" id="how__item__final ">
+					<div class="col-md-12 how__item__head">
+						<i class="fa fa-cogs" aria-hidden="true"></i>
+						<h3>Start</h3>
+						<p>We can start building amazing projects together</p>
+					</div>
+
+				</div>
 			</div>
 		</div>
 	</div>
@@ -182,35 +358,166 @@
 <!-- End Section -->
 
 <!-- Section -->
-<section id="how">
+<section class="contenedor" id="portafolio">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h3>Soy how</h3>
+				<h2 class="title">Portfolio</h2>
 			</div>
+			
+			<div class="col-md-12">
+				<div class="your-class">
+				  <div>
+				  	<div class="portafolio__item">
+				  		<div class="col-md-5">
+				  			<div class="tipo__item">
+				  				<img src="img/webdesign.svg" alt="webdesign">
+				  			</div>
+				  			<h3>Web Design</h3>
+					  		<h2>Keyko Tech</h2>
+							<img src="img/keyko.jpg" alt="">
+				  		</div>
+				  		<div class="col-md-7 portafolio__item__right">
+				  		
+				  			<h4>Project overview</h4>
+							<p>KEYKO® website was designed to target B2B market. With the objective to expand their business and offer KEYKO batteries easier to the end public, they wanted to speak to distributor and dealers</p>
+
+							<h4>Key Features</h4>
+
+							<ul>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Company´s video showing their facilities</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Easy and intuitive navigation throughout the site</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Different zones for each of the possible visitors: Dealers and Distributors</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>“Call to action” easy to spot</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Products catalogue with all the battery specifications needed</li>
+							</ul>
+
+							<h4>Project Technology Stack </h4>
+							<p>HTML: developed in HTML to offer the ability to adapt to clients requirements, offer speed and clear interface.</p>
+				  		</div>
+
+				  	</div>
+				  </div>
+				<!-- Item 2 -->
+				<div class="your-class">
+				  <div>
+				  	<div class="portafolio__item">
+				  		<div class="col-md-5">
+				  			<div class="tipo__item">
+				  				<img src="img/app.svg" alt="webdesign">
+				  			</div>
+				  			<h3>App</h3>
+					  		<h2>Pront</h2>
+							<img src="img/keyko.jpg" alt="">
+				  		</div>
+				  		<div class="col-md-7 portafolio__item__right">
+				  		
+				  			<h4>Project overview</h4>
+							<p>KEYKO® website was designed to target B2B market. With the objective to expand their business and offer KEYKO batteries easier to the end public, they wanted to speak to distributor and dealers</p>
+
+							<h4>Key Features</h4>
+
+							<ul>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Company´s video showing their facilities</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Easy and intuitive navigation throughout the site</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Different zones for each of the possible visitors: Dealers and Distributors</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>“Call to action” easy to spot</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Products catalogue with all the battery specifications needed</li>
+							</ul>
+
+							<h4>Project Technology Stack </h4>
+							<p>HTML: developed in HTML to offer the ability to adapt to clients requirements, offer speed and clear interface.</p>
+				  		</div>
+
+				  	</div>
+				  </div>
+				</div>
+				<!-- item3 -->
+
+				<div class="your-class">
+				  <div>
+				  	<div class="portafolio__item">
+				  		<div class="col-md-5">
+				  			<div class="tipo__item">
+				  				<img src="img/development.svg" alt="webdesign">
+				  			</div>
+				  			<h3>WebApp</h3>
+					  		<h2>Photofrost</h2>
+							<img src="img/keyko.jpg" alt="">
+				  		</div>
+				  		<div class="col-md-7 portafolio__item__right">
+				  		
+				  			<h4>Project overview</h4>
+							<p>KEYKO® website was designed to target B2B market. With the objective to expand their business and offer KEYKO batteries easier to the end public, they wanted to speak to distributor and dealers</p>
+
+							<h4>Key Features</h4>
+
+							<ul>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Company´s video showing their facilities</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Easy and intuitive navigation throughout the site</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Different zones for each of the possible visitors: Dealers and Distributors</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>“Call to action” easy to spot</li>
+								<li><i class="fa fa-check" aria-hidden="true"></i>Products catalogue with all the battery specifications needed</li>
+							</ul>
+
+							<h4>Project Technology Stack </h4>
+							<p>HTML: developed in HTML to offer the ability to adapt to clients requirements, offer speed and clear interface.</p>
+				  		</div>
+
+				  	</div>
+				  </div>
+				</div>
+
+				
+			</div>
+
 		</div>
 	</div>
 </section>
 <!-- End Section -->
 
 <!-- Section -->
-<section id="portafolio">
+<section class="contenedor" id="contact">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h3>Soy portafolio</h3>
+				<h2 class="title">
+					Contact us for a FREE QUOTE
+				</h2>
 			</div>
-		</div>
-	</div>
-</section>
-<!-- End Section -->
-
-<!-- Section -->
-<section id="contact">
-	<div class="container">
-		<div class="row">
 			<div class="col-md-12">
-				<h3>Soy contact</h3>
+				<h3>
+					We will be happy to help you!<br>
+					Contact us if you have any questions or want us to provide you with a free quote.
+
+				</h3>
+			</div>
+			<div class="col-md-4">
+				<div class="contact__item" id="contact__item--one">
+					<i class="fa fa-check" aria-hidden="true"></i><p>It is 100% free, and you are not committed to us so far.</p>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="contact__item" id="contact__item--two">
+					<i class="fa fa-check" aria-hidden="true"></i><p>It is Reliabe, we never share your contact details with anyone.</p>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="contact__item" id="contact__item--three">
+					<i class="fa fa-check" aria-hidden="true"></i><br><p>It is quick, we will contact you short.</p>
+				</div>
+			</div>
+
+			<div class="col-md-8 col-md-offset-2">
+				<form  method="POST" action="https://formspree.io/mager19@gmail.com">
+					<input type="text" placeholder="* Name" required name="Nombre">
+					<input type="email" placeholder="* E-mail" required name="Email">
+					<input type="text" placeholder="Phone" class="full-w" name="Teléfono">
+					<textarea class="full-w" name="textarea" id="" cols="30" rows="10" placeholder="How can we help you?" name="Mensaje"></textarea>
+					<input type="submit" value="SEND">
+				</form>
 			</div>
 		</div>
 	</div>
@@ -218,22 +525,40 @@
 <!-- End Section -->
 
 <!-- footer -->
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h3>Soy footer</h3>
-			</div>
-		</div>
-	</div>
-<footer>
+
 <!-- End Section -->
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> 
+<script src="js/waypoints.min.js"></script> 
 <script src="js/jquery.counterup.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/scrollreveal.min.js"></script>
+<script src="js/responsive-nav.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
+<script>
+	$(document).ready(function(){
+		  $('.your-class').slick({
 
+		  	autoplay:false,
+		  	autoplaySpeed: 5000,
+		  	dots: true,
+		  });
 
+		 var nav = responsiveNav(".nav-collapse");
+
+		  window.sr = ScrollReveal({mobile: false,});
+			sr.reveal('.software__item__animation, .marketing__item, .about__right', { duration: 500, delay: 500, });
+			sr.reveal('#how__item--one', { duration: 1000, delay: 800, });
+			sr.reveal('#how__item--two', { duration: 1000, delay: 2300, });
+			sr.reveal('#how__item--three', { duration: 1000, delay: 3800, });
+			sr.reveal('.how__item--four', { duration: 1000, delay: 5200, });
+			sr.reveal('#contact__item--one', { duration: 1000, delay: 500,scale: 2.2 });
+			sr.reveal('#contact__item--two', { duration: 1000, delay: 1000,scale: 2.2 });
+			sr.reveal('#contact__item--three', { duration: 1000, delay: 1500, scale: 2.2 });
+
+		  });
+		
+</script>
 
 </body>
 </html>
