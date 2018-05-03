@@ -1,0 +1,23 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mager19/landingnyxent.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mager19/landingnyxent/issues"
+  },
+  "homepage": "https://github.com/mager19/landingnyxent#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.3",
+    "gulp": "^3.9.1"
+  }
+}
